@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="d1.css" class="css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        
+       <ul>
+           <li>
+               <a href="#">
+                   <span class="icon"><i class="fa fa-home"></i></span>
+                   <span class="title">Dashboard</span>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <span class="icon"><i class="fa fa-cog"></i></span>
+                   <span class="title">Setting</span>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <span class="icon"><i class="fa fa-table"></i></span>
+                   <span class="title">Features</span>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <span class="icon"><i class="fa fa-question-circle"></i></span>
+                   <span class="title">Help</span>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <span class="icon"><i class="fa fa-user"></i></span>
+                   <span class="title">Profile</span>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <span class="icon">	
+                    <i class="fa fa-sign-out"></i></span>
+                   <span class="title">Log Out</span>
+               </a>
+           </li>
+       </ul>
+    </nav>
+
+    <div class="toogle" onclick ="toogleMenu()">
+        <i class="fa fa-bars"></i></div>
+
+    
+</body>
+    <script >
+        function toogleMenu(){
+            let navbar = document.querySelector('.navbar');
+            navbar.classList.toogle('active');
+        }
+    </script>
+</html>

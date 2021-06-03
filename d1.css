@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    cursor: pointer;
+    background: #1a111b;
+    font-family: 'Signika', sans-serif;
+}
+.slide{
+    text-align: center;
+}
+.navbar{
+    position: fixed;
+    width: 55px;
+
+    height: 100vh;
+    background: #59315d;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.navbar:hover,
+.navbar:active{
+    width: 250px;
+  
+}
+
+.navbar ul li:hover{
+    
+    background: rgb(85, 14, 97);
+}
+nav ul li a{
+    font-size: 20px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    line-height: 50px;
+    letter-spacing: 3px;
+    margin-left: 19px;
+
+}
+nav ul li a span:hover{
+    /* background: rgba(255, 255, 255, 0.507); */
+    border-radius: 4px;
+
+}
+span.title{
+    /* display: inline; */
+    position: absolute;
+    padding: 1px 30px;
+    text-align: center;
+   
+}
+.navbar .icon i{
+    width: 10px;
+    height: 48px;
+    position: relative;
+  
+}
+.navbar ul li a .icon  .fa{
+    position: relative;
+   
+    font-size: 25px;
+    padding-right: 20px;
+}
+.navbar .icon i:hover{
+    background: none;
+    color: black;
+}
+.toogle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgb(84, 29, 93);
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    text-align: center;
+    /* margin-top:10px ; */
+    padding-top: 18px;
+
+}
+.toogle:hover{
+    background-color: rgb(59, 60, 109);
+}
+.toogle:before{
+    /* content: '\f0c9'; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+}
+/* ------------------------------------------------------------------------------------- */
+
+@media (max-width:450px){
+    .navbar{
+        width: 40px;
+
+    }
+    .navbar:hover{
+        width: 170px;
+
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
+    .navbar ul li a .icon  .fa{
+        position: relative;
+       
+        font-size: 15px;
+    }
+    .toogle{
+        position: absolute;
+        top: 0;
+        padding-top: 10px;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+    }
+    .navbar ul li:hover{
+        background-color:rgba(60, 40, 97, 0.637);
+        /* margin: -5px 0px;
+        padding: -50px 0; */
+    }
+}
